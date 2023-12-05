@@ -16,7 +16,11 @@ This course is not just about building a Shopping List App; it's about the journ
 
 **Team members**                             Gopinath Hariharasudhan, Tim Hauber, Bryan Hartmann
 
-**Completed Phases**                         1️⃣2️⃣3️⃣4️⃣5️⃣
+**Completed Phases**                        1️⃣ ✅ 
+                                            2️⃣
+                                            3️⃣
+                                            4️⃣
+                                            5️⃣
 
 **Codestyle**                               - Everything is named with the camel case 
                                             - We only use tabs instead of spaces
@@ -24,7 +28,10 @@ This course is not just about building a Shopping List App; it's about the journ
                                             - Everything is separated with a space
 
 **How to start up the application locally**
-
+To start the application you have to go the backend or the frontend folder in your project.
+You can do that with the command cd frontend / cd backend . 
+If you are in the frontend folder you can start it with the command "npm run start" 
+If you are in the backend folder you can start it with the command "npm run dev"
 **Expected project grade**
 
 
