@@ -1,8 +1,12 @@
 FROM node:18-alpine
 COPY . /opt/app
-RUN cd /opt/app \
-  && rm package-lock.json \
-  && npm install --prod \
-  && npm run build:dev
+WORKDIR /opt/app
+
+RUN rm package-lock.json
+RUN npm install --prod
+RUN npm install --only=dev
+RUN npm run build:dev
+
+
 WORKDIR /opt/app
 CMD ["npx", "serve", "-s", "build"]
