@@ -17,7 +17,7 @@ This course is not just about building a Shopping List App; it's about the journ
 **Team members**                             Gopinath Hariharasudhan, Tim Hauber, Bryan Hartmann
 
 **Completed Phases**                        1️⃣ ✅ 
-                                            2️⃣
+                                            2️⃣ ✅
                                             3️⃣
                                             4️⃣
                                             5️⃣
@@ -30,8 +30,12 @@ This course is not just about building a Shopping List App; it's about the journ
 **How to start up the application locally**
 To start the application you have to go the backend or the frontend folder in your project.
 You can do that with the command cd frontend / cd backend . 
-If you are in the frontend folder you can start it with the command "npm run start" 
-If you are in the backend folder you can start it with the command "npm run dev"
+ - If you are in the frontend folder you can start it with the command "npm run start" 
+ - If you are in the backend folder you can start it with the command "npm run dev"
+ - To start up the dockerized application type in the command "docker-compose up -d" while Docker Desktop is running
+ - To stop the application use the command "docker-compose down"
+
+
 **Expected project grade**
 
 
