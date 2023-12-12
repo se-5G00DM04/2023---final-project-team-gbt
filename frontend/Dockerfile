@@ -1,4 +1,8 @@
-FROM node:latest
+FROM node:18-alpine
 COPY . /opt/app
+RUN cd /opt/app \
+  && rm package-lock.json \
+  && npm install --prod \
+  && npm run build:dev
 WORKDIR /opt/app
-CMD ["npm", "run", "start"]
+CMD ["npx", "serve", "-s", "build"]
