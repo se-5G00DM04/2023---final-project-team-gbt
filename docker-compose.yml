@@ -7,7 +7,7 @@ services:
     volumes:
       - "./frontend:/opt/app"
     environment:
-      - "CI=true"
+      - "CI: 'true'"
     restart: always
   backend:
     build:
