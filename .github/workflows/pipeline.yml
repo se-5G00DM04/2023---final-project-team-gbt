@@ -123,7 +123,7 @@ jobs:
         uses: docker/build-push-action@v5.0.0
         with:
           context: ./backend
-          file: ./backend/Dockerfile
+          file: ./backend/Dockerfile #I CHANGED THIS
           push: true
           tags: ${{ steps.backend-meta.outputs.tags }}
           labels: ${{ steps.backend-meta.outputs.labels }}
