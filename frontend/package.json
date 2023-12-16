@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test:ci": "react-scripts test --watchAll=false",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "start": "cross-env REACT_APP_BACKEND=http://localhost:8000/api react-scripts start",
