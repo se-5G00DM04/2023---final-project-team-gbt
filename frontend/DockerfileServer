@@ -1,12 +1,13 @@
+
 FROM node:18-alpine
 
 COPY . /opt/app
 
-WORKDIR /opt/app
- 
-RUN rm package-lock.json 
-RUN npm install --prod 
-RUN npm run build:dev
+RUN cd /opt/app \
+  && rm package-lock.json \
+  && npm install --prod \
+  && npm run build:dev
+
 
 WORKDIR /opt/app
 
