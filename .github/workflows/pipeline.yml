@@ -102,7 +102,7 @@ jobs:
         uses: docker/build-push-action@v5.0.0
         with:
           context: ./frontend
-          file: ./frontend/Dockerfile
+          file: ./frontend/DockerfileServer
           push: true
           tags: ${{ steps.frontend-meta.outputs.tags }}
           labels: ${{ steps.frontend-meta.outputs.labels }}
@@ -122,7 +122,7 @@ jobs:
         uses: docker/build-push-action@v5.0.0
         with:
           context: ./backend
-          file: ./backend/Dockerfile #I CHANGED THIS
+          file: ./backend/DockerfileServer #I CHANGED THIS
           push: true
           tags: ${{ steps.backend-meta.outputs.tags }}
           labels: ${{ steps.backend-meta.outputs.labels }}
