@@ -1,6 +1,4 @@
-FROM node:18-alpine
+FROM node:latest
 COPY . /opt/app
-RUN cd /opt/app \
-  && npm install --prod 
 WORKDIR /opt/app
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]
