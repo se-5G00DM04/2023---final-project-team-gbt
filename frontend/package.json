@@ -17,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:ci": "react-scripts test --watchAll=false",
-    "build:dev": "cross-env REACT_APP_BACKEND=http://172.16.4.167:8000/api react-scripts build",
-    "build:prod": "cross-env REACT_APP_BACKEND=http://23wsp-pro11.student.titeweb/api react-scripts build",
+    "build:dev": "cross-env REACT_APP_FRONTEND=http://172.16.4.167:4000 react-scripts build",
+    "build:prod": "cross-env REACT_APP_FRONTEND=http://23wsp-pro11.student.titeweb react-scripts build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
