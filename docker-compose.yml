@@ -3,7 +3,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - "8000:8000"
+      - "8000:3000"
     volumes:
       - "./frontend:/opt/app"
     environment:
