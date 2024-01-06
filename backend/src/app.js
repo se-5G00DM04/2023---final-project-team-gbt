@@ -1,29 +1,28 @@
-const express = require('express');
-const morgan = require('morgan');
-const helmet = require('helmet');
-const cors = require('cors');
+const express = require("express");
 
-require('dotenv').config();
+const cors = require("cors");
 
-const middlewares = require('./middlewares');
-const api = require('./api');
+const shoppingRouter = require("../routes/shoppingRouter");
 
 const app = express();
 
-app.use(morgan('dev'));
-app.use(helmet());
 app.use(cors());
+
 app.use(express.json());
 
-app.get('/', (req, res) => {
-  res.json({
-    message: '🦄🌈✨👋🌎🌍🌏✨🌈🦄',
-  });
+app.get("/", (req, res) => {
+  res.send("Hello Backend Developer!");
 });
 
-app.use('/api/v1', api);
+app.get("/api/", (req, res) => {
+  res.send("My super duper TeamGBT!");
+});
 
-app.use(middlewares.notFound);
-app.use(middlewares.errorHandler);
+app.use("/api/shopping", shoppingRouter);
+
+app.get("/api/:id/:name", (req, res) => {
+  console.log(req.params);
+  req.send(req.params);
+});
 
 module.exports = app;
