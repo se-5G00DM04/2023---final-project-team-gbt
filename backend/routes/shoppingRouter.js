@@ -4,17 +4,17 @@ const router = express.Router();
 let SHOPPING = [
   {
     name: "Apple",
-    items: "5",
+    items: 5,
     id: 1,
   },
   {
     name: "Banana",
-    items: "20",
+    items: 20,
     id: 2,
   },
   {
     name: "Orange",
-    items: "25",
+    items: 25,
     id: 3,
   },
 ];

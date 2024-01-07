@@ -17,7 +17,7 @@ function App() {
                     <span class="h2 me-2">Shopping List</span>
                     <span class="badge bg-danger">shopping</span>
                   </p>
-                  <p class="text-muted pb-2">16/12/2023 • TAMPERE</p>
+                  <p class="text-muted pb-2">08/01/2024 • TAMPERE</p>
                   <ListAdd />
                   <ul class="list-group rounded-0">
                     <ListItem />
