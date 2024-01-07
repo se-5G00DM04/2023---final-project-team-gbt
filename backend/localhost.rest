@@ -20,9 +20,7 @@ POST {{url}}/api/shopping
 Content-Type: application/json
 
 {
-    "name": "Milk",
-    "items": 3
-    
+    "name": "Milk"
 }
 
 ###
