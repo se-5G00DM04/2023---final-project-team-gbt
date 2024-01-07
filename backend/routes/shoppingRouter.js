@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const SHOPPING = [
+let SHOPPING = [
   {
     name: "Apple",
     items: "5",
