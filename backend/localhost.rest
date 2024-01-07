@@ -39,5 +39,5 @@ DELETE {{url}}/api/shopping/4
 Content-Type: application/json
 
 {
-    "id": 4
+   "id": 4
 }
