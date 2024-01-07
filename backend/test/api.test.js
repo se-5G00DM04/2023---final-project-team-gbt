@@ -35,7 +35,7 @@ describe("POST /api/shopping", () => {
   it("responds with a json message", (done) => {
     request(app)
       .post("/api/shopping")
-      .send({ name: "Apple", items: "5" })
+      .send({ name: "Apple", items: 5 })
       .expect("Content-Type", /json/)
       .expect(201, { name: "Apple", items: 5, id: 4 }, done);
   });
