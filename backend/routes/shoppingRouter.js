@@ -38,6 +38,9 @@ router.post("/", (req, res) => {
     return res.status(400).json({ error: "Name is a required field." });
   }
   newShopping.id = SHOPPING.length + 1;
+  while (SHOPPING.find((c) => c.id === newShopping.id)) {
+    newShopping.id++;
+  }
   newShopping.items = newShopping.items || 1;
   SHOPPING.push(newShopping);
   res.status(201).json(newShopping);
