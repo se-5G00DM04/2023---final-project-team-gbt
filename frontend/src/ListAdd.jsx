@@ -29,7 +29,6 @@ const ListAdd = ({}) => {
   };
 
   const refetchPage = async () => {
-    //refetch the data
     try {
       const response = await fetch("http://localhost:4000/api/shopping");
       const data = await response.json();
