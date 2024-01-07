@@ -5,7 +5,7 @@ function ListItem() {
 
   const fetchList = async () => {
     try {
-      const response = await fetch("http://localhost:4000/api/shopping");
+      const response = await fetch("http://172.16.4.167:4000/api/shopping");
       const data = await response.json();
       setList(data);
     } catch (error) {
@@ -16,13 +16,16 @@ function ListItem() {
 
   const deleteList = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/shopping/${id}`, {
-        method: "DELETE",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ id }),
-      });
+      const response = await fetch(
+        `http://172.16.4.167:4000/api/shopping/${id}`,
+        {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ id }),
+        }
+      );
       const data = await response.json();
       setList(lists.filter((list) => list.id !== data.id));
       console.log("Deleted: ", data);
@@ -33,13 +36,16 @@ function ListItem() {
   };
   const updateItemCount = async (id, newCount) => {
     try {
-      const response = await fetch(`http://localhost:4000/api/shopping/${id}`, {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ id, items: newCount }),
-      });
+      const response = await fetch(
+        `http://172.16.4.167:4000/api/shopping/${id}`,
+        {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ id, items: newCount }),
+        }
+      );
       const data = await response.json();
       // Update the state with the updated data from the server
       setList((prevLists) =>

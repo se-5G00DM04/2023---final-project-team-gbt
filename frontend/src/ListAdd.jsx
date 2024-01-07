@@ -6,7 +6,7 @@ const lists = [];
 const ListAdd = () => {
   const postList = async (post) => {
     try {
-      const response = await fetch("http://localhost:4000/api/shopping", {
+      const response = await fetch("http://172.16.4.167:4000/api/shopping", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
