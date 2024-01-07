@@ -1,6 +1,9 @@
 import React, { useRef } from "react";
 
-const ListAdd = ({}) => {
+const setList = () => {};
+const lists = [];
+
+const ListAdd = () => {
   const postList = async (post) => {
     try {
       const response = await fetch("http://localhost:4000/api/shopping", {
@@ -25,17 +28,7 @@ const ListAdd = ({}) => {
     const post = { name, items: 1 };
     postList(post);
     nameRef.current.value = "";
-    refetchPage();
-  };
-
-  const refetchPage = async () => {
-    try {
-      const response = await fetch("http://localhost:4000/api/shopping");
-      const data = await response.json();
-      setList(data);
-    } catch (error) {
-      console.error("Error: ", error);
-    }
+    window.location.reload();
   };
 
   return (
