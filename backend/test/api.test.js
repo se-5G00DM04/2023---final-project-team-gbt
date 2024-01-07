@@ -22,9 +22,9 @@ describe("GET /api/shopping", () => {
       .expect(
         200,
         [
-          { name: "Apple", items: "5", id: 1 },
-          { name: "Banana", items: "20", id: 2 },
-          { name: "Orange", items: "25", id: 3 },
+          { name: "Apple", items: 5, id: 1 },
+          { name: "Banana", items: 20, id: 2 },
+          { name: "Orange", items: 25, id: 3 },
         ],
         done
       );
