@@ -22,9 +22,9 @@ describe("GET /api/shopping", () => {
       .expect(
         200,
         [
-          { name: "Apple", items: "5", id: 1 },
-          { name: "Banana", items: "20", id: 2 },
-          { name: "Orange", items: "25", id: 3 },
+          { name: "Apple", items: 5, id: 1 },
+          { name: "Banana", items: 20, id: 2 },
+          { name: "Orange", items: 25, id: 3 },
         ],
         done
       );
@@ -37,7 +37,7 @@ describe("POST /api/shopping", () => {
       .post("/api/shopping")
       .send({ name: "Apple", items: "5" })
       .expect("Content-Type", /json/)
-      .expect(201, { name: "Apple", items: "5", id: 4 }, done);
+      .expect(201, { name: "Apple", items: 5, id: 4 }, done);
   });
 });
 
