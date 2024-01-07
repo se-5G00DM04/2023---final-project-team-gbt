@@ -1,0 +1,43 @@
+
+@hostname = localhost
+@port = 4000
+@host = {{hostname}}:{{port}}
+
+@url = http://{{host}}
+
+GET {{url}}
+
+### 
+
+GET {{url}}/api/
+
+###
+
+GET {{url}}/api/shopping
+
+### 
+POST {{url}}/api/shopping
+Content-Type: application/json
+
+{
+    "name": "Milk"
+}
+
+###
+
+PUT {{url}}/api/shopping/4
+Content-Type: application/json
+
+{
+    "name": "Fig",
+    "items": 2
+}
+
+###
+
+DELETE {{url}}/api/shopping/4
+Content-Type: application/json
+
+{
+   "id": 4
+}
