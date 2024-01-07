@@ -18,7 +18,7 @@ This course is not just about building a Shopping List App; it's about the journ
 
 **Completed Phases**                        1️⃣ ✅ 
                                             2️⃣ ✅
-                                            3️⃣
+                                            3️⃣ ✅
                                             4️⃣
                                             5️⃣
 
@@ -27,13 +27,23 @@ This course is not just about building a Shopping List App; it's about the journ
                                             - There must be a ";" at the end of the line
                                             - Everything is separated with a space
 
-**How to start up the application locally**
-To start the application you have to go the backend or the frontend folder in your project.
-You can do that with the command cd frontend / cd backend . 
- - If you are in the frontend folder you can start it with the command "npm run start" 
- - If you are in the backend folder you can start it with the command "npm run dev"
- - To start up the dockerized application type in the command "docker-compose up -d" while Docker Desktop is running
- - To stop the application use the command "docker-compose down"
+**How to start up the application**
+
+To carry out the following steps, you should be familiar with the terminal and npm (Node Package Manager) and have Docker installed on the local computer
+
+Start the Application Locally:
+    1. Navigate to the project directory in the terminal.
+        - Use the "ls" command to list the contents of the directory.
+        - Use "cd" and "cd .." command to navigate to either the backend or frontend folder.
+    3. In the frontend folder, use the command "npm run start" to initiate the frontend.
+    4. In the backend folder, use the command "npm run dev" to start the backend.
+    5. To stop the application, navigate to the respective frontend and backend folders and use "Ctrl+C" to terminate the processes.
+
+Start the Application with Docker:
+    1. Ensure Docker Desktop is running.
+    2. Navigate to the project directory in the terminal.
+    3. Use the command "docker-compose up -d" to start the application using Docker.
+    4. To stop the application, use the command "docker-compose down".
 
 
 **Expected project grade**
